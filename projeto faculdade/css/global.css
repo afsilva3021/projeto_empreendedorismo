@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet');
+@import url("header.css");
+@import url("footer.css");
+
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*Voltar ao ínicio*/
+
+.home-nav {
+  font-size: 1.3rem;
+  grid-column: 1/-1;
+  padding: 3rem;
+  padding-left: 2rem;
+}
+
+.home-nav span{
+color: #8c52ff;
+}
+
+@media (min-width: 1366px) {
+  html {
+    font-size: 16px;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}

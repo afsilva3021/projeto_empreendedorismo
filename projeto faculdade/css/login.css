@@ -1,36 +1,11 @@
 @import url("global.css");
+@import url("header.css");
+@import url("footer.css");
 
-.principal {
+.login {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
 }
-
-
-
-/* content: "";
-    width: 1000px;
-    height: 1000px;
-    border-radius: 50%;
-    background-color: #541690;
-    position: absolute;
-    bottom: 100px;
-    right: -400px;
-    z-index: -2; */
-
-/* .introducao-background::after {
-    content: "";
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: #8c52ff;
-    position: absolute;
-    right: 200px;
-    right: px;
-    z-index: -1;
-  } */
 
 .introducao-nav span {
   color: #541690;
@@ -47,24 +22,27 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .login-acess {
   display: flex;
   flex-wrap: wrap;
   gap: 10 px;
-  align-content: center;
-  justify-content: center;
+  align-items: center;
+  justify-items: center;
   flex: 1;
   font-size: 1.2rem;
   line-height: 1.2;
   position: relative;
   color: #ffffff;
+  padding: 100px;
 }
 
-h2 {
-  margin-top: 1.875rem;
-  margin-bottom: 2.875rem;
+.login-acess h2 {
+  padding-top: 1.875rem;
+  padding-bottom: 2.875rem;
   color: #ff8d00;
   font-size: 1.6rem;
 }
@@ -95,9 +73,8 @@ h2 {
 }
 
 .username,
-.password label{
+.password label {
   color: #8c52ff;
-
 }
 
 .required {
@@ -109,7 +86,7 @@ h2 {
   flex: 1;
   margin-bottom: 0.625rem;
   justify-content: space-between;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -137,7 +114,7 @@ h2 {
 .botao1 {
   background-color: #8c52ff;
   color: #ffffff;
-  padding: .725rem 1.25rem;
+  padding: 0.725rem 1.25rem;
   font-size: 1rem;
   border: 0.0625rem solid #541690;
   border-radius: 0.25rem;
@@ -151,24 +128,24 @@ h2 {
 
 /* Logo da Empresa */
 
-.empresa{
+.empresa {
+  display: flex;
+  flex-wrap: wrap;
   grid-area: 1/1;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .empresa img {
   margin-right: 0px;
-  margin-bottom: 4rem;
-  margin-top: 3rem ;
-  margin-left: 2rem;
-  
+  margin-top: 3rem;
 }
 
 .empresa h1 {
   font-size: 2rem;
   margin-bottom: 10rem;
 }
-
-
 
 .background {
   border-radius: 90% 50% 50% 100%;
@@ -178,10 +155,10 @@ h2 {
     #541690 0%,
     #ff8d00 100%
   );
-  width: calc(100% + 435px);
+  width: calc(100% + 340px);
   height: 1500px;
   top: -600px;
-  left: 10px;
+  left: 20px;
   position: absolute;
   z-index: -2;
   display: block;
@@ -191,5 +168,8 @@ h2 {
   .login .container {
     grid-template-columns: 1fr;
   }
-  
+  .principal {
+    padding: 0 20px;
+    grid-template-columns: 1fr;
+  }
 }

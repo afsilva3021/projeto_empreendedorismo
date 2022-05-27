@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet');
-@import url("header.css");
-@import url("footer.css");
 
 body {
   font-family: "Fira Sans", Arial, sans-serif;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  background: whitesmoke;
 }
 
 h1,
@@ -37,13 +35,17 @@ img {
 
 .home-nav {
   font-size: 1.3rem;
-  grid-column: 1/-1;
-  padding: 3rem;
-  padding-left: 2rem;
+  padding-top: 3.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.home-nav span{
-color: #8c52ff;
+.home-nav span {
+  color: #8c52ff;
+}
+
+.home-nav a {
+  color: #000000;
 }
 
 @media (min-width: 1366px) {
@@ -51,10 +53,24 @@ color: #8c52ff;
     font-size: 16px;
     line-height: 1.15;
   }
+  .home-nav {
+    padding: 60px 0;
+  }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 800px) {
   html {
     font-size: 14px;
+  }
+
+  .home-nav {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .home-nav {
+    text-align: center;
   }
 }
